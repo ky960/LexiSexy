@@ -1,0 +1,122 @@
+/* Center the entire game in full-page view */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Game container styling */
+#game {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+}
+
+/* Title styling for left and right alignment */
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#leftTitle {
+    font-size: 28px;
+    color: #2a3f54;
+    font-weight: bold;
+}
+
+#rightTitle {
+    font-size: 24px;
+    color: #8a94a3;
+    font-style: italic;
+}
+
+/* Other styling for game elements */
+#hint {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #8a94a3;
+}
+
+#previousHints {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #6b7280;
+}
+
+#feedback {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#revealedWord {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #333;
+    margin-top: 30px;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a3f54;
+    margin-top: 15px;
+}
+
+#guessInput {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#submitGuess {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: #2a3f54;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#submitGuess:hover {
+    background: #1a2738;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    #game {
+        width: 95%;
+        padding: 30px;
+    }
+
+    #leftTitle, #rightTitle {
+        font-size: 20px;
+    }
+
+    #submitGuess {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
